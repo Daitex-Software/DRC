@@ -1,0 +1,159 @@
+html {
+    background-image: url("fon_slide_1.png"); 
+    background-size: 2100px auto;
+    background-repeat: no-repeat;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.logo {
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 10%;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2vw;
+    font-weight: bold;
+    width: 25vw;
+    height: 10vh;
+    position: absolute;
+    top: 10vh;
+    left: 15vw;
+    padding: 1vh 2vw;
+}
+
+.nazva{
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    top: 10vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.text{
+    width: 50%;
+    font-size: 2vw;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    top: 30vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+.name input{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2vw;
+    background-color: rgba(255, 255, 255);
+    width: 15vw;
+    height: 3vw;
+    border-radius: 50px;
+    text-align: center;
+    border-color: #AFAFAF;
+    font-size: 1vw;
+    position: absolute;
+    top: 60vh;
+    left: 30%;
+    transform: translateX(-30%);
+}
+
+.email input{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2vw;
+    background-color: rgba(255, 255, 255);
+    width: 15vw;
+    height: 3vw;
+    border-radius: 50px;
+    text-align: center;
+    border-color: #AFAFAF;
+    font-size: 1vw;
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.kursi button{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2vw;
+    background-color: rgba(255, 255, 255, 0);
+    width: 15vw;
+    color: #AFAFAF;
+    height: 3vw;
+    border-radius: 50px;
+    text-align: center;
+    border-color: #AFAFAF;
+    border-radius: 2vw;
+    font-size: 1vw;
+    position: absolute;
+    top: 60vh;
+    right: calc(50% - 24vw);
+}
+
+.facebook button{
+    background-image: url("facebook.png");
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    text-align: center;
+    border-color: rgb(255, 255, 255, 0);
+    font-size: 1vw;
+    position: absolute;
+    top: 80vh;
+    left: calc(50% - 10vw);
+}
+
+.telegram button {
+    background-image: url("telegram.png");
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    top: 80vh;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    text-align: center;
+    border-color: rgba(255, 255, 255, 0);
+    font-size: 1vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sms button{
+    background-image: url("sms.png");
+    background-color: rgba(255, 255, 255, 0);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    text-align: center;
+    border-color: rgb(255, 255, 255, 0);
+    font-size: 1vw;
+    position: absolute;
+    top: 80vh;
+    right: calc(50% - 10vw);
+}
+
+.konez {
+    color: white;
+    font-size: 1.5vw;
+    position: absolute;
+    margin-top: 100vh;
+}

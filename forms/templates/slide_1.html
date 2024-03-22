@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">DEVELOPMENT IN PROGRESS</title>
+        <link rel="stylesheet" href="/static/slide_1.css">
+
+  </head>
+  <body>
+    <form action="/form" method="POST">
+      <div class="logo" id="logo">
+        <p></p>
+      </div>
+      <div class="nazva" id="nazva">
+        <h1 id="h1">ГО “ЦЕНТР ЦИФРОВИХ ДОСЛІДЖЕНЬ”</h1>
+      </div>
+      <div class="text" id="text">
+        <p id="p-1">
+          Development of the news resource DRC-Inform is still ongoing. Fill out
+          the form below if you want to receive release notifications.
+        </p>
+      </div>
+      <div class="name" id="name">
+        <input type="text" placeholder="Your name" name="name" />
+      </div>
+      <div class="email" id="email">
+        <input type="text" placeholder="Email" name="email" />
+      </div>
+      <div class="kursi" id="kursi">
+        <button type="submit">KEEP ME UPDATED</button>
+      </div>
+    </form>
+    <div class="buttons">
+      <div class="facebook" id="">
+        <button></button>
+      </div>
+      <div class="telegram" id="">
+        <button></button>
+      </div>
+      <div class="sms" id="">
+        <button></button>
+      </div>
+    </div>
+    <div class="konez" id="konez">
+      <p>© Copyright 2024</p>
+    </div>
+
+    <button onclick="changeLanguage('ukr')">Українська</button>
+    <button onclick="changeLanguage('eng')">English</button>
+
+    <script src="/static/texts-ukr2.js"></script>
+    <script src="/static/texts-eng2.js"></script>
+
+    <script>
+      let currentLanguage = "ukr";
+
+      function changeLanguage(language) {
+        currentLanguage = language;
+        translatePage();
+      }
+
+      function translatePage() {
+        const texts = currentLanguage === "eng" ? textsEng : textsUkr;
+        document.title = texts.h1;
+        document.getElementById("h1").innerText = texts.h1;
+        document.getElementById("p-1").innerText = texts["p-1"];
+        document.getElementById("name").querySelector("input").placeholder =
+          texts.name_placeholder;
+        document.getElementById("email").querySelector("input").placeholder =
+          texts.email_placeholder;
+        document.getElementById("kursi").querySelector("button").innerText =
+          texts.submit_button;
+        document.getElementById("facebook").querySelector("button").innerText =
+          texts.facebook_button;
+        document.getElementById("telegram").querySelector("button").innerText =
+          texts.telegram_button;
+        document.getElementById("sms").querySelector("button").innerText =
+          texts.sms_button;
+        document.getElementById("konez").querySelector("p").innerText =
+          texts.copyright_text;
+      }
+
+      translatePage();
+    </script>
+  </body>
+</html>
